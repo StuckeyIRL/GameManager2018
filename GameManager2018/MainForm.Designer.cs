@@ -1,6 +1,6 @@
 ﻿namespace GameManager2018
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.quickYear = new System.Windows.Forms.Label();
-            this.quickOldFavorites = new System.Windows.Forms.Label();
-            this.quickNewFavorites = new System.Windows.Forms.Label();
-            this.quickAll = new System.Windows.Forms.Label();
+            this.currentYear = new System.Windows.Forms.Label();
+            this.oldFavorites = new System.Windows.Forms.Label();
+            this.currentFavorites = new System.Windows.Forms.Label();
+            this.allGames = new System.Windows.Forms.Label();
             this.quickSearch = new System.Windows.Forms.PictureBox();
             this.textSearch = new System.Windows.Forms.TextBox();
             this.loadGame = new System.Windows.Forms.PictureBox();
@@ -78,13 +78,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelCredit = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label36 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label35 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.quickSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loadGame)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arrowDown)).BeginInit();
@@ -94,11 +94,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.arrowUp)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label28
@@ -123,55 +123,55 @@
             // 
             // quickYear
             // 
-            this.quickYear.AutoSize = true;
-            this.quickYear.BackColor = System.Drawing.Color.Transparent;
-            this.quickYear.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quickYear.ForeColor = System.Drawing.Color.Black;
-            this.quickYear.Location = new System.Drawing.Point(149, 52);
-            this.quickYear.Name = "quickYear";
-            this.quickYear.Size = new System.Drawing.Size(72, 34);
-            this.quickYear.TabIndex = 123;
-            this.quickYear.Text = "YEAR";
-            this.quickYear.Click += new System.EventHandler(this.LoadPage);
+            this.currentYear.AutoSize = true;
+            this.currentYear.BackColor = System.Drawing.Color.Transparent;
+            this.currentYear.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentYear.ForeColor = System.Drawing.Color.Black;
+            this.currentYear.Location = new System.Drawing.Point(149, 52);
+            this.currentYear.Name = "quickYear";
+            this.currentYear.Size = new System.Drawing.Size(72, 34);
+            this.currentYear.TabIndex = 123;
+            this.currentYear.Text = "YEAR";
+            this.currentYear.Click += new System.EventHandler(this.LoadPage);
             // 
             // quickOldFavorites
             // 
-            this.quickOldFavorites.AutoSize = true;
-            this.quickOldFavorites.BackColor = System.Drawing.Color.Transparent;
-            this.quickOldFavorites.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quickOldFavorites.ForeColor = System.Drawing.Color.Black;
-            this.quickOldFavorites.Location = new System.Drawing.Point(285, 52);
-            this.quickOldFavorites.Name = "quickOldFavorites";
-            this.quickOldFavorites.Size = new System.Drawing.Size(181, 34);
-            this.quickOldFavorites.TabIndex = 122;
-            this.quickOldFavorites.Text = "OLD FAVORITES";
-            this.quickOldFavorites.Click += new System.EventHandler(this.LoadPage);
+            this.oldFavorites.AutoSize = true;
+            this.oldFavorites.BackColor = System.Drawing.Color.Transparent;
+            this.oldFavorites.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.oldFavorites.ForeColor = System.Drawing.Color.Black;
+            this.oldFavorites.Location = new System.Drawing.Point(285, 52);
+            this.oldFavorites.Name = "quickOldFavorites";
+            this.oldFavorites.Size = new System.Drawing.Size(181, 34);
+            this.oldFavorites.TabIndex = 122;
+            this.oldFavorites.Text = "OLD FAVORITES";
+            this.oldFavorites.Click += new System.EventHandler(this.LoadPage);
             // 
             // quickNewFavorites
             // 
-            this.quickNewFavorites.AutoSize = true;
-            this.quickNewFavorites.BackColor = System.Drawing.Color.Transparent;
-            this.quickNewFavorites.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quickNewFavorites.ForeColor = System.Drawing.Color.Black;
-            this.quickNewFavorites.Location = new System.Drawing.Point(11, 52);
-            this.quickNewFavorites.Name = "quickNewFavorites";
-            this.quickNewFavorites.Size = new System.Drawing.Size(132, 34);
-            this.quickNewFavorites.TabIndex = 121;
-            this.quickNewFavorites.Text = "FAVORITES";
-            this.quickNewFavorites.Click += new System.EventHandler(this.LoadPage);
+            this.currentFavorites.AutoSize = true;
+            this.currentFavorites.BackColor = System.Drawing.Color.Transparent;
+            this.currentFavorites.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentFavorites.ForeColor = System.Drawing.Color.Black;
+            this.currentFavorites.Location = new System.Drawing.Point(11, 52);
+            this.currentFavorites.Name = "quickNewFavorites";
+            this.currentFavorites.Size = new System.Drawing.Size(132, 34);
+            this.currentFavorites.TabIndex = 121;
+            this.currentFavorites.Text = "FAVORITES";
+            this.currentFavorites.Click += new System.EventHandler(this.LoadPage);
             // 
             // quickAll
             // 
-            this.quickAll.AutoSize = true;
-            this.quickAll.BackColor = System.Drawing.Color.Transparent;
-            this.quickAll.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quickAll.ForeColor = System.Drawing.Color.Black;
-            this.quickAll.Location = new System.Drawing.Point(227, 52);
-            this.quickAll.Name = "quickAll";
-            this.quickAll.Size = new System.Drawing.Size(52, 34);
-            this.quickAll.TabIndex = 120;
-            this.quickAll.Text = "ALL";
-            this.quickAll.Click += new System.EventHandler(this.LoadPage);
+            this.allGames.AutoSize = true;
+            this.allGames.BackColor = System.Drawing.Color.Transparent;
+            this.allGames.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.allGames.ForeColor = System.Drawing.Color.Black;
+            this.allGames.Location = new System.Drawing.Point(227, 52);
+            this.allGames.Name = "quickAll";
+            this.allGames.Size = new System.Drawing.Size(52, 34);
+            this.allGames.TabIndex = 120;
+            this.allGames.Text = "ALL";
+            this.allGames.Click += new System.EventHandler(this.LoadPage);
             // 
             // quickSearch
             // 
@@ -598,55 +598,6 @@
             this.panel2.Size = new System.Drawing.Size(600, 250);
             this.panel2.TabIndex = 135;
             // 
-            // label35
-            // 
-            this.label35.Font = new System.Drawing.Font("Tw Cen MT Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(3, 33);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(155, 40);
-            this.label35.TabIndex = 134;
-            this.label35.Text = "Popularity (0000)";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(182, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox1.TabIndex = 135;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(226, 33);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox2.TabIndex = 136;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(272, 33);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox3.TabIndex = 137;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(318, 33);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox4.TabIndex = 138;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(364, 33);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox5.TabIndex = 139;
-            this.pictureBox5.TabStop = false;
-            // 
             // label36
             // 
             this.label36.Font = new System.Drawing.Font("Tw Cen MT Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -656,7 +607,56 @@
             this.label36.TabIndex = 140;
             this.label36.Text = "Description:";
             // 
-            // Form1
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(364, 33);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox5.TabIndex = 139;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(318, 33);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4.TabIndex = 138;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(272, 33);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3.TabIndex = 137;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(226, 33);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.TabIndex = 136;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(182, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.TabIndex = 135;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label35
+            // 
+            this.label35.Font = new System.Drawing.Font("Tw Cen MT Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(3, 33);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(155, 40);
+            this.label35.TabIndex = 134;
+            this.label35.Text = "Popularity (0000)";
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -665,10 +665,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label27);
-            this.Controls.Add(this.quickYear);
-            this.Controls.Add(this.quickOldFavorites);
-            this.Controls.Add(this.quickNewFavorites);
-            this.Controls.Add(this.quickAll);
+            this.Controls.Add(this.currentYear);
+            this.Controls.Add(this.oldFavorites);
+            this.Controls.Add(this.currentFavorites);
+            this.Controls.Add(this.allGames);
             this.Controls.Add(this.quickSearch);
             this.Controls.Add(this.textSearch);
             this.Controls.Add(this.loadGame);
@@ -703,8 +703,8 @@
             this.Controls.Add(this.gamePrevious);
             this.Controls.Add(this.gameCurrent);
             this.Controls.Add(this.arrowUp);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MainForm";
+            this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.LoadPage);
             ((System.ComponentModel.ISupportInitialize)(this.quickSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loadGame)).EndInit();
@@ -716,11 +716,11 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -730,10 +730,10 @@
 
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label quickYear;
-        private System.Windows.Forms.Label quickOldFavorites;
-        private System.Windows.Forms.Label quickNewFavorites;
-        private System.Windows.Forms.Label quickAll;
+        private System.Windows.Forms.Label currentYear;
+        private System.Windows.Forms.Label oldFavorites;
+        private System.Windows.Forms.Label currentFavorites;
+        private System.Windows.Forms.Label allGames;
         private System.Windows.Forms.PictureBox quickSearch;
         private System.Windows.Forms.TextBox textSearch;
         private System.Windows.Forms.PictureBox loadGame;
