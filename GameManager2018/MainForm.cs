@@ -12,57 +12,59 @@ using System.Data.OleDb;
 
 namespace GameManager2018
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        string SQLHeader = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Games.accdb";
-        int page = 0;
-        int maxpage = 0;
-        int totalPlays = 0;
-        string sSQL = null;
-        public Form1()
+        private string SQLHeader = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Games.accdb";
+        private int page = 0;
+        private int maxpage = 0;
+        private int totalPlays = 0;
+
+        public MainForm()
         {
             InitializeComponent();
         }
 
         private void LoadPage(object sender, EventArgs e)
         {
-            quickYear.Text = DateTime.Now.Year.ToString();
-            quickNewFavorites.Font = new Font(quickNewFavorites.Font, FontStyle.Regular);
-            quickYear.Font = new Font(quickYear.Font, FontStyle.Regular);
-            quickAll.Font = new Font(quickAll.Font, FontStyle.Regular);
-            quickOldFavorites.Font = new Font(quickOldFavorites.Font, FontStyle.Regular);
+            currentYear.Text = DateTime.Now.Year.ToString();
+            currentYear.Font = new Font(currentYear.Font, FontStyle.Regular);
+            currentFavorites.Font = new Font(currentFavorites.Font, FontStyle.Regular);
+            allGames.Font = new Font(allGames.Font, FontStyle.Regular);
+            oldFavorites.Font = new Font(oldFavorites.Font, FontStyle.Regular);
             Control control = (Control)sender;
             OleDbConnection conX = new OleDbConnection(SQLHeader);
             DataSet dsX = new DataSet();
-            MessageBox.Show("Test");
+
+            string sSQL = "";
+
             switch (control.Name)
             {
-                case "quickNewFavorites":
-                    page = 0;
-                    sSQL = "select DisplayTitle, TechnicalTitle, [Description], Played from Main where Favorite = " + DateTime.Now.Year.ToString() + " order by Played DESC";
-                    quickNewFavorites.Font = new Font(quickNewFavorites.Font, FontStyle.Italic);
-                    break;
-                case "quickSearch":
+                case "search":
                     page = 0;
                     textSearch.Text = textSearch.Text.Replace("'", "");
                     sSQL = "select DisplayTitle, TechnicalTitle, [Description], Played from Main where DisplayTitle like '%" + textSearch.Text + "%' or Author like '%" + textSearch.Text + "%' or TechnicalTitle like '%" + textSearch.Text + "%' order by Played DESC";
                     break;
-                case "quickYear":
+                case "currentFavorites":
+                    page = 0;
+                    sSQL = "select DisplayTitle, TechnicalTitle, [Description], Played from Main where Favorite = " + DateTime.Now.Year.ToString() + " order by Played DESC";
+                    currentFavorites.Font = new Font(currentFavorites.Font, FontStyle.Italic);
+                    break;
+                case "currentYear":
                     page = 0;
                     sSQL = "select DisplayTitle, TechnicalTitle, [Description], Played from Main where Yr = " + DateTime.Now.Year.ToString() + " order by Played DESC";
-                    quickYear.Font = new Font(quickYear.Font, FontStyle.Italic);
+                    currentYear.Font = new Font(currentYear.Font, FontStyle.Italic);
                     break;
-                case "quickAll":
+                case "allGames":
                     page = 0;
                     sSQL = "select DisplayTitle, TechnicalTitle, [Description], Played from Main order by Played DESC";
-                    quickAll.Font = new Font(quickAll.Font, FontStyle.Italic);
+                    allGames.Font = new Font(allGames.Font, FontStyle.Italic);
                     break;
-                case "quickOldFavorites":
+                case "oldFavorites":
                     page = 0;
                     sSQL = "select DisplayTitle, TechnicalTitle, [Description], Played from Main where Favorite like '20%' and Favorite not like '" + DateTime.Now.Year.ToString() + "' order by Played DESC";
-                    quickOldFavorites.Font = new Font(quickOldFavorites.Font, FontStyle.Italic);
+                    oldFavorites.Font = new Font(oldFavorites.Font, FontStyle.Italic);
                     break;
-                default:
+                default: // Default to new favorites
                     sSQL = "select DisplayTitle, TechnicalTitle, [Description], Played from Main where Favorite = " + DateTime.Now.Year.ToString() + " order by DisplayTitle";
                     break;
             }
