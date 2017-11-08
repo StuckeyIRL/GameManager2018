@@ -17,7 +17,7 @@ namespace GameManager2018
         private string SQLHeader = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Games.accdb";
         int increment = 16;
         //int difference = 0;
-
+        string originalSender;
         public MainForm()
         {
             InitializeComponent();
@@ -35,19 +35,19 @@ namespace GameManager2018
             DataSet dsX = new DataSet();
             
             string sSQL = "";
-
+            originalSender = control.Name;
             switch (control.Name)
             {
                 case "search":
                     textSearch.Text = textSearch.Text.Replace("'", "");
-                    sSQL = "select DisplayTitle, TechnicalTitle, [Description], Played from Main where DisplayTitle like '%" + textSearch.Text + "%' or Author like '%" + textSearch.Text + "%' or TechnicalTitle like '%" + textSearch.Text + "%' order by Played DESC";
+                    sSQL = "select DisplayTitle, TechnicalTitle, [Description], Played from Main where DisplayTitle like '%" + textSearch.Text + "%' or Author like '%" + textSearch.Text + "%' or TechnicalTitle like '%" + textSearch.Text + "%' order by DisplayTitle";
                     break;
                 case "currentFavorites":
-                    sSQL = "select DisplayTitle, TechnicalTitle, [Description], Played from Main where Favorite = " + DateTime.Now.Year.ToString() + " order by Played DESC";
+                    sSQL = "select DisplayTitle, TechnicalTitle, [Description], Played from Main where Favorite = " + DateTime.Now.Year.ToString() + " order by DisplayTitle";
                     currentFavorites.Font = new Font(currentFavorites.Font, FontStyle.Italic);
                     break;
                 case "currentYear":
-                    sSQL = "select DisplayTitle, TechnicalTitle, [Description], Played from Main where Yr = " + DateTime.Now.Year.ToString() + " order by Played DESC";
+                    sSQL = "select DisplayTitle, TechnicalTitle, [Description], Played from Main where Yr = " + DateTime.Now.Year.ToString() + " order by DisplayTitle";
                     currentYear.Font = new Font(currentYear.Font, FontStyle.Italic);
                     break;
                 case "allGames":
@@ -55,7 +55,7 @@ namespace GameManager2018
                     allGames.Font = new Font(allGames.Font, FontStyle.Italic);
                     break;
                 case "oldFavorites":
-                    sSQL = "select DisplayTitle, TechnicalTitle, [Description], Played from Main where Favorite like '20%' and Favorite not like '" + DateTime.Now.Year.ToString() + "' order by Played DESC";
+                    sSQL = "select DisplayTitle, TechnicalTitle, [Description], Played from Main where Favorite like '20%' and Favorite not like '" + DateTime.Now.Year.ToString() + "' order by DisplayTitle";
                     oldFavorites.Font = new Font(oldFavorites.Font, FontStyle.Italic);
                     break;
                 default: // Default to new favorites
@@ -65,9 +65,6 @@ namespace GameManager2018
             string dispTitle = "";
             OleDbDataAdapter daX = new OleDbDataAdapter(sSQL, conX);
             daX.Fill(dsX);
-
-            //difference = 31 - increment;
-            //MessageBox.Show("" + difference);
             if (dsX.Tables[0].Rows.Count >= 31)
             {
                 for (int i = increment; i < 31; i++)
@@ -92,8 +89,24 @@ namespace GameManager2018
                 increment--;
             else
                 increment = 31;
-            
-            LoadPage(allGames, null);
+            switch (originalSender)
+            {
+                case "quickSearch":
+                    LoadPage(quickSearch, null);
+                    break;
+                case "currentFavorites":
+                    LoadPage(currentFavorites, null);
+                    break;
+                case "oldFavorites":
+                    LoadPage(oldFavorites, null);
+                    break;
+                case "currentYear":
+                    LoadPage(currentYear, null);
+                    break;
+                default:
+                    LoadPage(allGames, null);
+                    break;
+            }
         }
 
         private void moveDown(object sender, EventArgs e)
@@ -102,7 +115,24 @@ namespace GameManager2018
                 increment++;
             else
                 increment = 0;
-            LoadPage(allGames, null);
+            switch (originalSender)
+            {
+                case "quickSearch":
+                    LoadPage(quickSearch, null);
+                    break;
+                case "currentFavorites":
+                    LoadPage(currentFavorites, null);
+                    break;
+                case "oldFavorites":
+                    LoadPage(oldFavorites, null);
+                    break;
+                case "currentYear":
+                    LoadPage(currentYear, null);
+                    break;
+                default:
+                    LoadPage(allGames, null);
+                    break;
+            }
         }
     }
 }
