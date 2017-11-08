@@ -1,0 +1,9 @@
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\gm182\GameManager2018-master\GameManager2018-master\GameManager2018\bin\Debug\GameManager2018.exe.config
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\gm182\GameManager2018-master\GameManager2018-master\GameManager2018\bin\Debug\GameManager2018.exe
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\gm182\GameManager2018-master\GameManager2018-master\GameManager2018\bin\Debug\GameManager2018.pdb
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\gm182\GameManager2018-master\GameManager2018-master\GameManager2018\obj\Debug\GameManager2018.csprojResolveAssemblyReference.cache
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\gm182\GameManager2018-master\GameManager2018-master\GameManager2018\obj\Debug\GameManager2018.MainForm.resources
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\gm182\GameManager2018-master\GameManager2018-master\GameManager2018\obj\Debug\GameManager2018.Properties.Resources.resources
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\gm182\GameManager2018-master\GameManager2018-master\GameManager2018\obj\Debug\GameManager2018.csproj.GenerateResource.Cache
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\gm182\GameManager2018-master\GameManager2018-master\GameManager2018\obj\Debug\GameManager2018.exe
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\gm182\GameManager2018-master\GameManager2018-master\GameManager2018\obj\Debug\GameManager2018.pdb

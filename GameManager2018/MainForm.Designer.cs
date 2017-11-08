@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.game27 = new System.Windows.Forms.Label();
             this.currentYear = new System.Windows.Forms.Label();
             this.oldFavorites = new System.Windows.Forms.Label();
             this.currentFavorites = new System.Windows.Forms.Label();
@@ -38,32 +37,32 @@
             this.quickSearch = new System.Windows.Forms.PictureBox();
             this.textSearch = new System.Windows.Forms.TextBox();
             this.loadGame = new System.Windows.Forms.PictureBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.game26 = new System.Windows.Forms.Label();
+            this.game25 = new System.Windows.Forms.Label();
+            this.game24 = new System.Windows.Forms.Label();
+            this.game23 = new System.Windows.Forms.Label();
+            this.game22 = new System.Windows.Forms.Label();
+            this.game21 = new System.Windows.Forms.Label();
+            this.game20 = new System.Windows.Forms.Label();
+            this.game19 = new System.Windows.Forms.Label();
+            this.game18 = new System.Windows.Forms.Label();
+            this.game17 = new System.Windows.Forms.Label();
+            this.game16 = new System.Windows.Forms.Label();
+            this.game15 = new System.Windows.Forms.Label();
+            this.game14 = new System.Windows.Forms.Label();
+            this.game13 = new System.Windows.Forms.Label();
+            this.game12 = new System.Windows.Forms.Label();
+            this.game11 = new System.Windows.Forms.Label();
+            this.game10 = new System.Windows.Forms.Label();
+            this.game9 = new System.Windows.Forms.Label();
+            this.game8 = new System.Windows.Forms.Label();
+            this.game7 = new System.Windows.Forms.Label();
+            this.game6 = new System.Windows.Forms.Label();
+            this.game5 = new System.Windows.Forms.Label();
+            this.game4 = new System.Windows.Forms.Label();
+            this.game3 = new System.Windows.Forms.Label();
+            this.game2 = new System.Windows.Forms.Label();
+            this.game1 = new System.Windows.Forms.Label();
             this.arrowDown = new System.Windows.Forms.PictureBox();
             this.gameNext = new System.Windows.Forms.PictureBox();
             this.gamePrevious = new System.Windows.Forms.PictureBox();
@@ -85,6 +84,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label35 = new System.Windows.Forms.Label();
+            this.game28 = new System.Windows.Forms.Label();
+            this.game29 = new System.Windows.Forms.Label();
+            this.game30 = new System.Windows.Forms.Label();
+            this.game0 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.quickSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loadGame)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arrowDown)).BeginInit();
@@ -101,73 +104,63 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label28
+            // game27
             // 
-            this.label28.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(11, 899);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(232, 30);
-            this.label28.TabIndex = 125;
-            this.label28.Text = "GameLabel";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game27.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game27.Location = new System.Drawing.Point(11, 896);
+            this.game27.Name = "game27";
+            this.game27.Size = new System.Drawing.Size(232, 30);
+            this.game27.TabIndex = 124;
+            this.game27.Text = "GameLabel";
+            this.game27.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label27
-            // 
-            this.label27.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(11, 869);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(232, 30);
-            this.label27.TabIndex = 124;
-            this.label27.Text = "GameLabel";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // quickYear
+            // currentYear
             // 
             this.currentYear.AutoSize = true;
             this.currentYear.BackColor = System.Drawing.Color.Transparent;
             this.currentYear.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentYear.ForeColor = System.Drawing.Color.Black;
             this.currentYear.Location = new System.Drawing.Point(149, 52);
-            this.currentYear.Name = "quickYear";
+            this.currentYear.Name = "currentYear";
             this.currentYear.Size = new System.Drawing.Size(72, 34);
             this.currentYear.TabIndex = 123;
             this.currentYear.Text = "YEAR";
             this.currentYear.Click += new System.EventHandler(this.LoadPage);
             // 
-            // quickOldFavorites
+            // oldFavorites
             // 
             this.oldFavorites.AutoSize = true;
             this.oldFavorites.BackColor = System.Drawing.Color.Transparent;
             this.oldFavorites.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oldFavorites.ForeColor = System.Drawing.Color.Black;
             this.oldFavorites.Location = new System.Drawing.Point(285, 52);
-            this.oldFavorites.Name = "quickOldFavorites";
+            this.oldFavorites.Name = "oldFavorites";
             this.oldFavorites.Size = new System.Drawing.Size(181, 34);
             this.oldFavorites.TabIndex = 122;
             this.oldFavorites.Text = "OLD FAVORITES";
             this.oldFavorites.Click += new System.EventHandler(this.LoadPage);
             // 
-            // quickNewFavorites
+            // currentFavorites
             // 
             this.currentFavorites.AutoSize = true;
             this.currentFavorites.BackColor = System.Drawing.Color.Transparent;
             this.currentFavorites.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentFavorites.ForeColor = System.Drawing.Color.Black;
             this.currentFavorites.Location = new System.Drawing.Point(11, 52);
-            this.currentFavorites.Name = "quickNewFavorites";
+            this.currentFavorites.Name = "currentFavorites";
             this.currentFavorites.Size = new System.Drawing.Size(132, 34);
             this.currentFavorites.TabIndex = 121;
             this.currentFavorites.Text = "FAVORITES";
             this.currentFavorites.Click += new System.EventHandler(this.LoadPage);
             // 
-            // quickAll
+            // allGames
             // 
             this.allGames.AutoSize = true;
             this.allGames.BackColor = System.Drawing.Color.Transparent;
             this.allGames.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.allGames.ForeColor = System.Drawing.Color.Black;
             this.allGames.Location = new System.Drawing.Point(227, 52);
-            this.allGames.Name = "quickAll";
+            this.allGames.Name = "allGames";
             this.allGames.Size = new System.Drawing.Size(52, 34);
             this.allGames.TabIndex = 120;
             this.allGames.Text = "ALL";
@@ -200,273 +193,276 @@
             this.loadGame.TabIndex = 117;
             this.loadGame.TabStop = false;
             // 
-            // label26
+            // game26
             // 
-            this.label26.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(11, 839);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(232, 30);
-            this.label26.TabIndex = 116;
-            this.label26.Text = "GameLabel";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game26.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game26.Location = new System.Drawing.Point(11, 866);
+            this.game26.Name = "game26";
+            this.game26.Size = new System.Drawing.Size(232, 30);
+            this.game26.TabIndex = 116;
+            this.game26.Text = "GameLabel";
+            this.game26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label25
+            // game25
             // 
-            this.label25.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(11, 809);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(232, 30);
-            this.label25.TabIndex = 115;
-            this.label25.Text = "GameLabel";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game25.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game25.Location = new System.Drawing.Point(11, 836);
+            this.game25.Name = "game25";
+            this.game25.Size = new System.Drawing.Size(232, 30);
+            this.game25.TabIndex = 115;
+            this.game25.Text = "GameLabel";
+            this.game25.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label24
+            // game24
             // 
-            this.label24.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(11, 779);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(232, 30);
-            this.label24.TabIndex = 114;
-            this.label24.Text = "GameLabel";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game24.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game24.Location = new System.Drawing.Point(11, 806);
+            this.game24.Name = "game24";
+            this.game24.Size = new System.Drawing.Size(232, 30);
+            this.game24.TabIndex = 114;
+            this.game24.Text = "GameLabel";
+            this.game24.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label23
+            // game23
             // 
-            this.label23.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(11, 749);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(232, 30);
-            this.label23.TabIndex = 113;
-            this.label23.Text = "GameLabel";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game23.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game23.Location = new System.Drawing.Point(11, 776);
+            this.game23.Name = "game23";
+            this.game23.Size = new System.Drawing.Size(232, 30);
+            this.game23.TabIndex = 113;
+            this.game23.Text = "GameLabel";
+            this.game23.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label22
+            // game22
             // 
-            this.label22.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(11, 719);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(232, 30);
-            this.label22.TabIndex = 112;
-            this.label22.Text = "GameLabel";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game22.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game22.Location = new System.Drawing.Point(11, 746);
+            this.game22.Name = "game22";
+            this.game22.Size = new System.Drawing.Size(232, 30);
+            this.game22.TabIndex = 112;
+            this.game22.Text = "GameLabel";
+            this.game22.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label21
+            // game21
             // 
-            this.label21.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(11, 689);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(232, 30);
-            this.label21.TabIndex = 111;
-            this.label21.Text = "GameLabel";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game21.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game21.Location = new System.Drawing.Point(11, 716);
+            this.game21.Name = "game21";
+            this.game21.Size = new System.Drawing.Size(232, 30);
+            this.game21.TabIndex = 111;
+            this.game21.Text = "GameLabel";
+            this.game21.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label20
+            // game20
             // 
-            this.label20.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(11, 659);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(232, 30);
-            this.label20.TabIndex = 110;
-            this.label20.Text = "GameLabel";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game20.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game20.Location = new System.Drawing.Point(11, 686);
+            this.game20.Name = "game20";
+            this.game20.Size = new System.Drawing.Size(232, 30);
+            this.game20.TabIndex = 110;
+            this.game20.Text = "GameLabel";
+            this.game20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label19
+            // game19
             // 
-            this.label19.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(11, 629);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(232, 30);
-            this.label19.TabIndex = 109;
-            this.label19.Text = "GameLabel";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game19.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game19.Location = new System.Drawing.Point(11, 656);
+            this.game19.Name = "game19";
+            this.game19.Size = new System.Drawing.Size(232, 30);
+            this.game19.TabIndex = 109;
+            this.game19.Text = "GameLabel";
+            this.game19.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label18
+            // game18
             // 
-            this.label18.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(11, 599);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(232, 30);
-            this.label18.TabIndex = 108;
-            this.label18.Text = "GameLabel";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game18.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game18.Location = new System.Drawing.Point(11, 626);
+            this.game18.Name = "game18";
+            this.game18.Size = new System.Drawing.Size(232, 30);
+            this.game18.TabIndex = 108;
+            this.game18.Text = "GameLabel";
+            this.game18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label17
+            // game17
             // 
-            this.label17.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(11, 569);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(232, 30);
-            this.label17.TabIndex = 107;
-            this.label17.Text = "GameLabel";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game17.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game17.Location = new System.Drawing.Point(11, 596);
+            this.game17.Name = "game17";
+            this.game17.Size = new System.Drawing.Size(232, 30);
+            this.game17.TabIndex = 107;
+            this.game17.Text = "GameLabel";
+            this.game17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label16
+            // game16
             // 
-            this.label16.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(11, 539);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(232, 30);
-            this.label16.TabIndex = 106;
-            this.label16.Text = "GameLabel";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game16.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.game16.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game16.Location = new System.Drawing.Point(11, 566);
+            this.game16.Name = "game16";
+            this.game16.Size = new System.Drawing.Size(232, 30);
+            this.game16.TabIndex = 106;
+            this.game16.Text = "GameLabel";
+            this.game16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label15
+            // game15
             // 
-            this.label15.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(11, 509);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(232, 30);
-            this.label15.TabIndex = 105;
-            this.label15.Text = "GameLabel";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game15.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game15.Location = new System.Drawing.Point(11, 536);
+            this.game15.Name = "game15";
+            this.game15.Size = new System.Drawing.Size(232, 30);
+            this.game15.TabIndex = 105;
+            this.game15.Text = "GameLabel";
+            this.game15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label14
+            // game14
             // 
-            this.label14.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(11, 479);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(232, 30);
-            this.label14.TabIndex = 104;
-            this.label14.Text = "GameLabel";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game14.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game14.Location = new System.Drawing.Point(11, 506);
+            this.game14.Name = "game14";
+            this.game14.Size = new System.Drawing.Size(232, 30);
+            this.game14.TabIndex = 104;
+            this.game14.Text = "GameLabel";
+            this.game14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label13
+            // game13
             // 
-            this.label13.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(11, 449);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(232, 30);
-            this.label13.TabIndex = 103;
-            this.label13.Text = "GameLabel";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game13.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game13.Location = new System.Drawing.Point(11, 476);
+            this.game13.Name = "game13";
+            this.game13.Size = new System.Drawing.Size(232, 30);
+            this.game13.TabIndex = 103;
+            this.game13.Text = "GameLabel";
+            this.game13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label12
+            // game12
             // 
-            this.label12.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(11, 419);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(232, 30);
-            this.label12.TabIndex = 102;
-            this.label12.Text = "GameLabel";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game12.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game12.Location = new System.Drawing.Point(11, 446);
+            this.game12.Name = "game12";
+            this.game12.Size = new System.Drawing.Size(232, 30);
+            this.game12.TabIndex = 102;
+            this.game12.Text = "GameLabel";
+            this.game12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label11
+            // game11
             // 
-            this.label11.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(11, 386);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(232, 30);
-            this.label11.TabIndex = 101;
-            this.label11.Text = "GameLabel";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game11.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game11.Location = new System.Drawing.Point(11, 413);
+            this.game11.Name = "game11";
+            this.game11.Size = new System.Drawing.Size(232, 30);
+            this.game11.TabIndex = 101;
+            this.game11.Text = "GameLabel";
+            this.game11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label10
+            // game10
             // 
-            this.label10.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(11, 356);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(232, 30);
-            this.label10.TabIndex = 100;
-            this.label10.Text = "GameLabel";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game10.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game10.Location = new System.Drawing.Point(11, 383);
+            this.game10.Name = "game10";
+            this.game10.Size = new System.Drawing.Size(232, 30);
+            this.game10.TabIndex = 100;
+            this.game10.Text = "GameLabel";
+            this.game10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label9
+            // game9
             // 
-            this.label9.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(11, 326);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(232, 30);
-            this.label9.TabIndex = 99;
-            this.label9.Text = "GameLabel";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game9.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game9.Location = new System.Drawing.Point(11, 353);
+            this.game9.Name = "game9";
+            this.game9.Size = new System.Drawing.Size(232, 30);
+            this.game9.TabIndex = 99;
+            this.game9.Text = "GameLabel";
+            this.game9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label8
+            // game8
             // 
-            this.label8.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(11, 296);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(232, 30);
-            this.label8.TabIndex = 98;
-            this.label8.Text = "GameLabel";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game8.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game8.Location = new System.Drawing.Point(11, 323);
+            this.game8.Name = "game8";
+            this.game8.Size = new System.Drawing.Size(232, 30);
+            this.game8.TabIndex = 98;
+            this.game8.Text = "GameLabel";
+            this.game8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label7
+            // game7
             // 
-            this.label7.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(11, 266);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(232, 30);
-            this.label7.TabIndex = 97;
-            this.label7.Text = "GameLabel";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game7.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game7.Location = new System.Drawing.Point(11, 293);
+            this.game7.Name = "game7";
+            this.game7.Size = new System.Drawing.Size(232, 30);
+            this.game7.TabIndex = 97;
+            this.game7.Text = "GameLabel";
+            this.game7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label6
+            // game6
             // 
-            this.label6.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(11, 236);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(232, 30);
-            this.label6.TabIndex = 96;
-            this.label6.Text = "GameLabel";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game6.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game6.Location = new System.Drawing.Point(11, 263);
+            this.game6.Name = "game6";
+            this.game6.Size = new System.Drawing.Size(232, 30);
+            this.game6.TabIndex = 96;
+            this.game6.Text = "GameLabel";
+            this.game6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label5
+            // game5
             // 
-            this.label5.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(11, 206);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(232, 30);
-            this.label5.TabIndex = 95;
-            this.label5.Text = "GameLabel";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game5.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game5.Location = new System.Drawing.Point(11, 233);
+            this.game5.Name = "game5";
+            this.game5.Size = new System.Drawing.Size(232, 30);
+            this.game5.TabIndex = 95;
+            this.game5.Text = "GameLabel";
+            this.game5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label4
+            // game4
             // 
-            this.label4.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(11, 176);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(232, 30);
-            this.label4.TabIndex = 94;
-            this.label4.Text = "GameLabel";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game4.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game4.Location = new System.Drawing.Point(11, 203);
+            this.game4.Name = "game4";
+            this.game4.Size = new System.Drawing.Size(232, 30);
+            this.game4.TabIndex = 94;
+            this.game4.Text = "GameLabel";
+            this.game4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label3
+            // game3
             // 
-            this.label3.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(11, 146);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(232, 30);
-            this.label3.TabIndex = 93;
-            this.label3.Text = "GameLabel";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game3.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game3.Location = new System.Drawing.Point(11, 173);
+            this.game3.Name = "game3";
+            this.game3.Size = new System.Drawing.Size(232, 30);
+            this.game3.TabIndex = 93;
+            this.game3.Text = "GameLabel";
+            this.game3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label2
+            // game2
             // 
-            this.label2.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 116);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(232, 30);
-            this.label2.TabIndex = 92;
-            this.label2.Text = "GameLabel";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game2.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game2.Location = new System.Drawing.Point(11, 143);
+            this.game2.Name = "game2";
+            this.game2.Size = new System.Drawing.Size(232, 30);
+            this.game2.TabIndex = 92;
+            this.game2.Text = "GameLabel";
+            this.game2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label1
+            // game1
             // 
-            this.label1.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 86);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 30);
-            this.label1.TabIndex = 91;
-            this.label1.Text = "GameLabel";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game1.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game1.Location = new System.Drawing.Point(11, 113);
+            this.game1.Name = "game1";
+            this.game1.Size = new System.Drawing.Size(232, 30);
+            this.game1.TabIndex = 91;
+            this.game1.Text = "GameLabel";
+            this.game1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // arrowDown
             // 
+            this.arrowDown.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.arrowDown.Location = new System.Drawing.Point(320, 887);
             this.arrowDown.Name = "arrowDown";
             this.arrowDown.Size = new System.Drawing.Size(100, 50);
             this.arrowDown.TabIndex = 90;
             this.arrowDown.TabStop = false;
+            this.arrowDown.Click += new System.EventHandler(this.moveDown);
             // 
             // gameNext
             // 
@@ -494,11 +490,13 @@
             // 
             // arrowUp
             // 
+            this.arrowUp.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.arrowUp.Location = new System.Drawing.Point(320, 96);
             this.arrowUp.Name = "arrowUp";
             this.arrowUp.Size = new System.Drawing.Size(100, 50);
             this.arrowUp.TabIndex = 86;
             this.arrowUp.TabStop = false;
+            this.arrowUp.Click += new System.EventHandler(this.moveUp);
             // 
             // label29
             // 
@@ -576,7 +574,7 @@
             // labelCredit
             // 
             this.labelCredit.Font = new System.Drawing.Font("Tw Cen MT Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCredit.Location = new System.Drawing.Point(3, 0);
+            this.labelCredit.Location = new System.Drawing.Point(3, 2);
             this.labelCredit.Name = "labelCredit";
             this.labelCredit.Size = new System.Drawing.Size(594, 40);
             this.labelCredit.TabIndex = 133;
@@ -601,7 +599,7 @@
             // label36
             // 
             this.label36.Font = new System.Drawing.Font("Tw Cen MT Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(3, 76);
+            this.label36.Location = new System.Drawing.Point(3, 78);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(594, 167);
             this.label36.TabIndex = 140;
@@ -609,7 +607,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(364, 33);
+            this.pictureBox5.Location = new System.Drawing.Point(364, 35);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(40, 40);
             this.pictureBox5.TabIndex = 139;
@@ -617,7 +615,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(318, 33);
+            this.pictureBox4.Location = new System.Drawing.Point(318, 35);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(40, 40);
             this.pictureBox4.TabIndex = 138;
@@ -625,7 +623,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(272, 33);
+            this.pictureBox3.Location = new System.Drawing.Point(272, 35);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 40);
             this.pictureBox3.TabIndex = 137;
@@ -633,7 +631,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(226, 33);
+            this.pictureBox2.Location = new System.Drawing.Point(226, 35);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.TabIndex = 136;
@@ -641,7 +639,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(182, 33);
+            this.pictureBox1.Location = new System.Drawing.Point(182, 35);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.TabIndex = 135;
@@ -650,21 +648,64 @@
             // label35
             // 
             this.label35.Font = new System.Drawing.Font("Tw Cen MT Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(3, 33);
+            this.label35.Location = new System.Drawing.Point(3, 35);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(155, 40);
             this.label35.TabIndex = 134;
             this.label35.Text = "Popularity (0000)";
             // 
+            // game28
+            // 
+            this.game28.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game28.Location = new System.Drawing.Point(12, 926);
+            this.game28.Name = "game28";
+            this.game28.Size = new System.Drawing.Size(232, 30);
+            this.game28.TabIndex = 136;
+            this.game28.Text = "GameLabel";
+            this.game28.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // game29
+            // 
+            this.game29.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game29.Location = new System.Drawing.Point(12, 956);
+            this.game29.Name = "game29";
+            this.game29.Size = new System.Drawing.Size(232, 30);
+            this.game29.TabIndex = 137;
+            this.game29.Text = "GameLabel";
+            this.game29.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // game30
+            // 
+            this.game30.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game30.Location = new System.Drawing.Point(12, 986);
+            this.game30.Name = "game30";
+            this.game30.Size = new System.Drawing.Size(232, 30);
+            this.game30.TabIndex = 138;
+            this.game30.Text = "GameLabel";
+            this.game30.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // game0
+            // 
+            this.game0.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game0.Location = new System.Drawing.Point(12, 86);
+            this.game0.Name = "game0";
+            this.game0.Size = new System.Drawing.Size(232, 30);
+            this.game0.TabIndex = 139;
+            this.game0.Text = "GameLabel";
+            this.game0.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1248, 950);
+            this.ClientSize = new System.Drawing.Size(1248, 1045);
+            this.Controls.Add(this.game0);
+            this.Controls.Add(this.game30);
+            this.Controls.Add(this.game29);
+            this.Controls.Add(this.game28);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label28);
-            this.Controls.Add(this.label27);
+            this.Controls.Add(this.game27);
             this.Controls.Add(this.currentYear);
             this.Controls.Add(this.oldFavorites);
             this.Controls.Add(this.currentFavorites);
@@ -672,32 +713,32 @@
             this.Controls.Add(this.quickSearch);
             this.Controls.Add(this.textSearch);
             this.Controls.Add(this.loadGame);
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.label24);
-            this.Controls.Add(this.label23);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.game26);
+            this.Controls.Add(this.game25);
+            this.Controls.Add(this.game24);
+            this.Controls.Add(this.game23);
+            this.Controls.Add(this.game22);
+            this.Controls.Add(this.game21);
+            this.Controls.Add(this.game20);
+            this.Controls.Add(this.game19);
+            this.Controls.Add(this.game18);
+            this.Controls.Add(this.game17);
+            this.Controls.Add(this.game16);
+            this.Controls.Add(this.game15);
+            this.Controls.Add(this.game14);
+            this.Controls.Add(this.game13);
+            this.Controls.Add(this.game12);
+            this.Controls.Add(this.game11);
+            this.Controls.Add(this.game10);
+            this.Controls.Add(this.game9);
+            this.Controls.Add(this.game8);
+            this.Controls.Add(this.game7);
+            this.Controls.Add(this.game6);
+            this.Controls.Add(this.game5);
+            this.Controls.Add(this.game4);
+            this.Controls.Add(this.game3);
+            this.Controls.Add(this.game2);
+            this.Controls.Add(this.game1);
             this.Controls.Add(this.arrowDown);
             this.Controls.Add(this.gameNext);
             this.Controls.Add(this.gamePrevious);
@@ -727,9 +768,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label game27;
         private System.Windows.Forms.Label currentYear;
         private System.Windows.Forms.Label oldFavorites;
         private System.Windows.Forms.Label currentFavorites;
@@ -737,32 +776,32 @@
         private System.Windows.Forms.PictureBox quickSearch;
         private System.Windows.Forms.TextBox textSearch;
         private System.Windows.Forms.PictureBox loadGame;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label game26;
+        private System.Windows.Forms.Label game25;
+        private System.Windows.Forms.Label game24;
+        private System.Windows.Forms.Label game23;
+        private System.Windows.Forms.Label game22;
+        private System.Windows.Forms.Label game21;
+        private System.Windows.Forms.Label game20;
+        private System.Windows.Forms.Label game19;
+        private System.Windows.Forms.Label game18;
+        private System.Windows.Forms.Label game17;
+        private System.Windows.Forms.Label game16;
+        private System.Windows.Forms.Label game15;
+        private System.Windows.Forms.Label game14;
+        private System.Windows.Forms.Label game13;
+        private System.Windows.Forms.Label game12;
+        private System.Windows.Forms.Label game11;
+        private System.Windows.Forms.Label game10;
+        private System.Windows.Forms.Label game9;
+        private System.Windows.Forms.Label game8;
+        private System.Windows.Forms.Label game7;
+        private System.Windows.Forms.Label game6;
+        private System.Windows.Forms.Label game5;
+        private System.Windows.Forms.Label game4;
+        private System.Windows.Forms.Label game3;
+        private System.Windows.Forms.Label game2;
+        private System.Windows.Forms.Label game1;
         private System.Windows.Forms.PictureBox arrowDown;
         private System.Windows.Forms.PictureBox gameNext;
         private System.Windows.Forms.PictureBox gamePrevious;
@@ -784,6 +823,10 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label game28;
+        private System.Windows.Forms.Label game29;
+        private System.Windows.Forms.Label game30;
+        private System.Windows.Forms.Label game0;
     }
 }
 
