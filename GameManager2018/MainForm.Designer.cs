@@ -462,7 +462,7 @@
             this.arrowDown.Size = new System.Drawing.Size(100, 50);
             this.arrowDown.TabIndex = 90;
             this.arrowDown.TabStop = false;
-            this.arrowDown.Click += new System.EventHandler(this.moveDown);
+            this.arrowDown.Click += new System.EventHandler(this.moveList);
             // 
             // gameNext
             // 
@@ -496,7 +496,7 @@
             this.arrowUp.Size = new System.Drawing.Size(100, 50);
             this.arrowUp.TabIndex = 86;
             this.arrowUp.TabStop = false;
-            this.arrowUp.Click += new System.EventHandler(this.moveUp);
+            this.arrowUp.Click += new System.EventHandler(this.moveList);
             // 
             // label29
             // 

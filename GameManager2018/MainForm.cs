@@ -31,11 +31,12 @@ namespace GameManager2018
             allGames.Font = new Font(allGames.Font, FontStyle.Regular);
             oldFavorites.Font = new Font(oldFavorites.Font, FontStyle.Regular);
             Control control = (Control)sender;
+            originalSender = control.Name;
             OleDbConnection conX = new OleDbConnection(SQLHeader);
             DataSet dsX = new DataSet();
             
             string sSQL = "";
-            originalSender = control.Name;
+            
             switch (control.Name)
             {
                 case "search":
@@ -83,38 +84,76 @@ namespace GameManager2018
             }
         }
 
-        private void moveUp(object sender, EventArgs e)
+        //private void moveUp(object sender, EventArgs e)
+        //{
+        //    if (increment > 0)
+        //        increment--;
+        //    else
+        //        increment = 31;
+        //    switch (originalSender)
+        //    {
+        //        case "quickSearch":
+        //            LoadPage(quickSearch, null);
+        //            break;
+        //        case "currentFavorites":
+        //            LoadPage(currentFavorites, null);
+        //            break;
+        //        case "oldFavorites":
+        //            LoadPage(oldFavorites, null);
+        //            break;
+        //        case "currentYear":
+        //            LoadPage(currentYear, null);
+        //            break;
+        //        default:
+        //            LoadPage(allGames, null);
+        //            break;
+        //    }
+        //}
+
+        //private void moveDown(object sender, EventArgs e)
+        //{
+        //    if (increment < 31)
+        //        increment++;
+        //    else
+        //        increment = 0;
+        //    switch (originalSender)
+        //    {
+        //        case "quickSearch":
+        //            LoadPage(quickSearch, null);
+        //            break;
+        //        case "currentFavorites":
+        //            LoadPage(currentFavorites, null);
+        //            break;
+        //        case "oldFavorites":
+        //            LoadPage(oldFavorites, null);
+        //            break;
+        //        case "currentYear":
+        //            LoadPage(currentYear, null);
+        //            break;
+        //        default:
+        //            LoadPage(allGames, null);
+        //            break;
+        //    }
+        //}
+
+        private void moveList(object sender, EventArgs e)
         {
-            if (increment > 0)
-                increment--;
-            else
-                increment = 31;
-            switch (originalSender)
+            Control control = (Control)sender;
+            switch (control.Name)
             {
-                case "quickSearch":
-                    LoadPage(quickSearch, null);
+                case "arrowUp":
+                    if (increment > 0)
+                        increment--;
+                    else
+                        increment = 31;
                     break;
-                case "currentFavorites":
-                    LoadPage(currentFavorites, null);
-                    break;
-                case "oldFavorites":
-                    LoadPage(oldFavorites, null);
-                    break;
-                case "currentYear":
-                    LoadPage(currentYear, null);
-                    break;
-                default:
-                    LoadPage(allGames, null);
+                case "arrowDown":
+                    if (increment < 31)
+                        increment++;
+                    else
+                        increment = 0;
                     break;
             }
-        }
-
-        private void moveDown(object sender, EventArgs e)
-        {
-            if (increment < 31)
-                increment++;
-            else
-                increment = 0;
             switch (originalSender)
             {
                 case "quickSearch":
