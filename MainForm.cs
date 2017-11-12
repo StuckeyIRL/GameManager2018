@@ -16,13 +16,11 @@ namespace GameManager2018
     {
         private string SQLHeader = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Games.accdb";
         int increment = 16;
-        //int difference = 0;
         string originalSender;
         public MainForm()
         {
             InitializeComponent();
         }
-
         private void LoadPage(object sender, EventArgs e)
         {
             currentYear.Text = DateTime.Now.Year.ToString();
@@ -34,9 +32,7 @@ namespace GameManager2018
             originalSender = control.Name;
             OleDbConnection conX = new OleDbConnection(SQLHeader);
             DataSet dsX = new DataSet();
-            
             string sSQL = "";
-            
             switch (control.Name)
             {
                 case "search":
@@ -64,6 +60,7 @@ namespace GameManager2018
                     break;
             }
             string dispTitle = "";
+            string techTitle = "";
             OleDbDataAdapter daX = new OleDbDataAdapter(sSQL, conX);
             daX.Fill(dsX);
             if (dsX.Tables[0].Rows.Count >= 31)
@@ -71,17 +68,32 @@ namespace GameManager2018
                 for (int i = increment; i < 31; i++)
                 {
                     dispTitle = (dsX.Tables[0].Rows[i - increment]["DisplayTitle"]).ToString();
-                    Controls["game" + i].Text = (dispTitle);
+                    techTitle = (dsX.Tables[0].Rows[i - increment]["TechnicalTitle"]).ToString();
+                    Controls["game" + i].Text = dispTitle;
+                    Controls["game" + i].Tag = dispTitle + "~" + techTitle;
                 }
                 int x = 0;
                 
                 for (int i = increment; i > 0; i--)
                 {
                     dispTitle = (dsX.Tables[0].Rows[dsX.Tables[0].Rows.Count - x - 1]["DisplayTitle"]).ToString();
-                    Controls["game" + (i - 1)].Text = (dispTitle);
+                    techTitle = (dsX.Tables[0].Rows[dsX.Tables[0].Rows.Count - x - 1]["TechnicalTitle"]).ToString();
+                    Controls["game" + (i - 1)].Text = dispTitle;
+                    Controls["game" + (i - 1)].Tag = dispTitle + "~" + techTitle;
                     x++;
                 }
             }
+            try
+            {
+                gamePrevious.Image = Image.FromFile(Application.StartupPath + @"\Games\" + Controls["game15"].Tag.ToString().Split('~').Last() + @"\" + Controls["game15"].Tag.ToString().Split('~').Last() + "_Cover.png");
+                gameCurrent.Image = Image.FromFile(Application.StartupPath + @"\Games\" + Controls["game16"].Tag.ToString().Split('~').Last() + @"\" + Controls["game16"].Tag.ToString().Split('~').Last() + "_Cover.png");
+                gameNext.Image = Image.FromFile(Application.StartupPath + @"\Games\" + Controls["game17"].Tag.ToString().Split('~').Last() + @"\" + Controls["game17"].Tag.ToString().Split('~').Last() + "_Cover.png");
+            }
+            catch
+            {
+
+            }
+
         }
         private void moveList(object sender, EventArgs e)
         {
@@ -119,6 +131,12 @@ namespace GameManager2018
                     LoadPage(allGames, null);
                     break;
             }
+        }
+
+        private void selectGame(object sender, EventArgs e)
+        {
+            Control control = (Control)sender;
+            MessageBox.Show(control.Tag.ToString());
         }
     }
 }

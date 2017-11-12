@@ -113,6 +113,7 @@
             this.game27.TabIndex = 124;
             this.game27.Text = "GameLabel";
             this.game27.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game27.Click += new System.EventHandler(this.selectGame);
             // 
             // currentYear
             // 
@@ -202,6 +203,7 @@
             this.game26.TabIndex = 116;
             this.game26.Text = "GameLabel";
             this.game26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game26.Click += new System.EventHandler(this.selectGame);
             // 
             // game25
             // 
@@ -212,6 +214,7 @@
             this.game25.TabIndex = 115;
             this.game25.Text = "GameLabel";
             this.game25.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game25.Click += new System.EventHandler(this.selectGame);
             // 
             // game24
             // 
@@ -222,6 +225,7 @@
             this.game24.TabIndex = 114;
             this.game24.Text = "GameLabel";
             this.game24.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game24.Click += new System.EventHandler(this.selectGame);
             // 
             // game23
             // 
@@ -232,6 +236,7 @@
             this.game23.TabIndex = 113;
             this.game23.Text = "GameLabel";
             this.game23.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game23.Click += new System.EventHandler(this.selectGame);
             // 
             // game22
             // 
@@ -242,6 +247,7 @@
             this.game22.TabIndex = 112;
             this.game22.Text = "GameLabel";
             this.game22.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game22.Click += new System.EventHandler(this.selectGame);
             // 
             // game21
             // 
@@ -252,6 +258,7 @@
             this.game21.TabIndex = 111;
             this.game21.Text = "GameLabel";
             this.game21.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game21.Click += new System.EventHandler(this.selectGame);
             // 
             // game20
             // 
@@ -262,6 +269,7 @@
             this.game20.TabIndex = 110;
             this.game20.Text = "GameLabel";
             this.game20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game20.Click += new System.EventHandler(this.selectGame);
             // 
             // game19
             // 
@@ -272,6 +280,7 @@
             this.game19.TabIndex = 109;
             this.game19.Text = "GameLabel";
             this.game19.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game19.Click += new System.EventHandler(this.selectGame);
             // 
             // game18
             // 
@@ -282,6 +291,7 @@
             this.game18.TabIndex = 108;
             this.game18.Text = "GameLabel";
             this.game18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game18.Click += new System.EventHandler(this.selectGame);
             // 
             // game17
             // 
@@ -292,6 +302,7 @@
             this.game17.TabIndex = 107;
             this.game17.Text = "GameLabel";
             this.game17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game17.Click += new System.EventHandler(this.selectGame);
             // 
             // game16
             // 
@@ -303,6 +314,7 @@
             this.game16.TabIndex = 106;
             this.game16.Text = "GameLabel";
             this.game16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game16.Click += new System.EventHandler(this.selectGame);
             // 
             // game15
             // 
@@ -313,6 +325,7 @@
             this.game15.TabIndex = 105;
             this.game15.Text = "GameLabel";
             this.game15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game15.Click += new System.EventHandler(this.selectGame);
             // 
             // game14
             // 
@@ -323,6 +336,7 @@
             this.game14.TabIndex = 104;
             this.game14.Text = "GameLabel";
             this.game14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game14.Click += new System.EventHandler(this.selectGame);
             // 
             // game13
             // 
@@ -333,6 +347,7 @@
             this.game13.TabIndex = 103;
             this.game13.Text = "GameLabel";
             this.game13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game13.Click += new System.EventHandler(this.selectGame);
             // 
             // game12
             // 
@@ -343,6 +358,7 @@
             this.game12.TabIndex = 102;
             this.game12.Text = "GameLabel";
             this.game12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game12.Click += new System.EventHandler(this.selectGame);
             // 
             // game11
             // 
@@ -353,6 +369,7 @@
             this.game11.TabIndex = 101;
             this.game11.Text = "GameLabel";
             this.game11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game11.Click += new System.EventHandler(this.selectGame);
             // 
             // game10
             // 
@@ -363,6 +380,7 @@
             this.game10.TabIndex = 100;
             this.game10.Text = "GameLabel";
             this.game10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game10.Click += new System.EventHandler(this.selectGame);
             // 
             // game9
             // 
@@ -373,6 +391,7 @@
             this.game9.TabIndex = 99;
             this.game9.Text = "GameLabel";
             this.game9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game9.Click += new System.EventHandler(this.selectGame);
             // 
             // game8
             // 
@@ -383,6 +402,7 @@
             this.game8.TabIndex = 98;
             this.game8.Text = "GameLabel";
             this.game8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game8.Click += new System.EventHandler(this.selectGame);
             // 
             // game7
             // 
@@ -393,6 +413,7 @@
             this.game7.TabIndex = 97;
             this.game7.Text = "GameLabel";
             this.game7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game7.Click += new System.EventHandler(this.selectGame);
             // 
             // game6
             // 
@@ -403,6 +424,7 @@
             this.game6.TabIndex = 96;
             this.game6.Text = "GameLabel";
             this.game6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game6.Click += new System.EventHandler(this.selectGame);
             // 
             // game5
             // 
@@ -413,6 +435,7 @@
             this.game5.TabIndex = 95;
             this.game5.Text = "GameLabel";
             this.game5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game5.Click += new System.EventHandler(this.selectGame);
             // 
             // game4
             // 
@@ -423,6 +446,7 @@
             this.game4.TabIndex = 94;
             this.game4.Text = "GameLabel";
             this.game4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game4.Click += new System.EventHandler(this.selectGame);
             // 
             // game3
             // 
@@ -433,6 +457,7 @@
             this.game3.TabIndex = 93;
             this.game3.Text = "GameLabel";
             this.game3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game3.Click += new System.EventHandler(this.selectGame);
             // 
             // game2
             // 
@@ -443,6 +468,7 @@
             this.game2.TabIndex = 92;
             this.game2.Text = "GameLabel";
             this.game2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game2.Click += new System.EventHandler(this.selectGame);
             // 
             // game1
             // 
@@ -453,6 +479,7 @@
             this.game1.TabIndex = 91;
             this.game1.Text = "GameLabel";
             this.game1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game1.Click += new System.EventHandler(this.selectGame);
             // 
             // arrowDown
             // 
@@ -469,6 +496,7 @@
             this.gameNext.Location = new System.Drawing.Point(276, 669);
             this.gameNext.Name = "gameNext";
             this.gameNext.Size = new System.Drawing.Size(200, 200);
+            this.gameNext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gameNext.TabIndex = 89;
             this.gameNext.TabStop = false;
             // 
@@ -477,6 +505,7 @@
             this.gamePrevious.Location = new System.Drawing.Point(276, 167);
             this.gamePrevious.Name = "gamePrevious";
             this.gamePrevious.Size = new System.Drawing.Size(200, 200);
+            this.gamePrevious.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gamePrevious.TabIndex = 88;
             this.gamePrevious.TabStop = false;
             // 
@@ -485,6 +514,7 @@
             this.gameCurrent.Location = new System.Drawing.Point(247, 386);
             this.gameCurrent.Name = "gameCurrent";
             this.gameCurrent.Size = new System.Drawing.Size(250, 250);
+            this.gameCurrent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gameCurrent.TabIndex = 87;
             this.gameCurrent.TabStop = false;
             // 
@@ -663,6 +693,7 @@
             this.game28.TabIndex = 136;
             this.game28.Text = "GameLabel";
             this.game28.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game28.Click += new System.EventHandler(this.selectGame);
             // 
             // game29
             // 
@@ -673,6 +704,7 @@
             this.game29.TabIndex = 137;
             this.game29.Text = "GameLabel";
             this.game29.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game29.Click += new System.EventHandler(this.selectGame);
             // 
             // game30
             // 
@@ -683,6 +715,7 @@
             this.game30.TabIndex = 138;
             this.game30.Text = "GameLabel";
             this.game30.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game30.Click += new System.EventHandler(this.selectGame);
             // 
             // game0
             // 
@@ -693,6 +726,7 @@
             this.game0.TabIndex = 139;
             this.game0.Text = "GameLabel";
             this.game0.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.game0.Click += new System.EventHandler(this.selectGame);
             // 
             // MainForm
             // 
